@@ -84,12 +84,24 @@
                     Laravel 7
                 </div>
 
+
+                <section class="feedbacks">
+                    @if (session()->has('message'))
+                        <h4 style="color:red">{{ session('message') }}</h4>
+
+                        @php session()->flush() @endphp
+                    @endif
+
+                    @if (isset($message))
+                        <h4 style="color:blue">{{ $message }}</h4>
+                    @endif
+                </section>
+
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="{{ url('/') }}">Index</a>
+                    <a href="{{ route('numbers') }}">Numbers</a>
+                    <a href="{{ route('numbers-2') }}">Numbers 2</a>
+                    <a href="{{ route('go-numbers') }}">Go Numbers</a>
                 </div>
             </div>
         </div>

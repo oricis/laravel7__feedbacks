@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TestsController@index');
+Route::get('numbers', 'TestsController@numbers')->name('numbers');
+Route::get('numbers-2', 'TestsController@numbers2')->name('numbers-2');
+Route::get('go-numbers', function()
+{
+    return redirect()->route('numbers')
+        ->with('message', 'To numbers() from routes');
+})->name('go-numbers');
