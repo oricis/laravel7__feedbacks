@@ -1,11 +1,20 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# Laravel 7 - Feedbacks
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+@author: Moisés Alcocer, 2020.
+
+
+## About this App
+
+Test how to send messages to views from a controller class.
+
+ The test are in `App\Http\Controllers\TestController.php` and the view:
+`resources/views/welcome.blade.php`.
+
+
+This project has intalled ***Laravel Telescope***. Open: *http://www.theweb.com/telescope*
+
+***
+***
 
 ## About Laravel
 

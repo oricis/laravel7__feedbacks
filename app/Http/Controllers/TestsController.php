@@ -24,7 +24,8 @@ class TestsController extends Controller
         dump('TestsController / numbers()'); // HACK: trace
 
 
-        return redirect('/')->with('message', 'numbers() method was visited!');
+        return redirect('/')
+            ->with('message', 'numbers() method was visited!');
     }
 
     public function numbers2()
@@ -32,6 +33,7 @@ class TestsController extends Controller
         dump('TestsController / numbers()'); // HACK: trace
         // session()->flash('message', 'numbers() method was visited!');
 
-        return view('welcome')->with('message', 'numbers() method was visited!');
+        return view('welcome')
+            ->with('message', 'numbers() method was visited!');
     }
 }
